@@ -19,7 +19,8 @@
 		float: left;
 		position: relative;
 		width: 100%;
-		height: 730px;
+		height: 630px;
+		z-index: 99;
 		.grid {
 		  position: absolute;
 		  left: 0;
@@ -100,7 +101,7 @@
 			width: 300px;
 			float: left;
 			left: 79px;
-			top: 423px;
+			top: 323px;
 			transform-origin: 0%;
 			-webkit-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
 			   -moz-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
@@ -119,7 +120,7 @@
 		  width: 320px;
 		  float: left;
 		  left: 150px;
-			top: 290px;
+			top: 190px;
 		  list-style-type: none;
 		  /*Hide the lighting gradient from the front face*/
 		  background-size: 0, cover;
@@ -142,7 +143,7 @@
 		  width: 370px;
 		  float: left;
 	     left: 300px;
-    	top: 180px;
+    	top: 80px;
 		  list-style-type: none;
 		  /*Hide the lighting gradient from the front face*/
 		  
@@ -162,7 +163,7 @@
 
 		.four {
 			right: 35px;
-			top: 205px;
+			top: 105px;
 			background: url("../img/kurzova.jpg");
 			-webkit-background-size: contain;
 			-o-background-size: contain;
@@ -185,6 +186,41 @@
 		display: block;
 		position: absolute;
 		bottom: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 470px;
+		left: 0;
+		bottom: -190px;
+		background-image: url('../img/heometry.png');
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		z-index: 9;
+		
+	}
+}
+
+.infografics {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 250px 0;
+	background-color: #000;
+	z-index: 2;
+	&:after {
+		content: '';
+		width: 100%;
+		left: 0;
+		height: 290px;
+		position: absolute;
+		z-index: 9;
+		background-image: url('../img/polygon-gray-1.png');
+		background-repeat: no-repeat;
+		bottom: -120px;
 	}
 }
 

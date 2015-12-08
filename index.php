@@ -50,6 +50,12 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="infografics">
+		<div class="container">
+			<div class="row"></div>
+		</div>
+	</section>
 <?php wp_footer(); ?>
 </body>
 </html>

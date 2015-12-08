@@ -127,7 +127,8 @@ ul {
     float: left;
     position: relative;
     width: 100%;
-    height: 730px;
+    height: 630px;
+    z-index: 99;
     /*Left and Bottom Sides*/
     /*Left Side*/
     /*Bottom Side*/
@@ -185,7 +186,7 @@ ul {
       width: 300px;
       float: left;
       left: 79px;
-      top: 423px;
+      top: 323px;
       transform-origin: 0%;
       -webkit-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
       -moz-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
@@ -202,7 +203,7 @@ ul {
       width: 320px;
       float: left;
       left: 150px;
-      top: 290px;
+      top: 190px;
       list-style-type: none;
       /*Hide the lighting gradient from the front face*/
       background-size: 0, cover;
@@ -223,7 +224,7 @@ ul {
       width: 370px;
       float: left;
       left: 300px;
-      top: 180px;
+      top: 80px;
       list-style-type: none;
       /*Hide the lighting gradient from the front face*/
       -webkit-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
@@ -240,7 +241,7 @@ ul {
       background-size: contain; }
     .initial-screen__slider .four {
       right: 35px;
-      top: 205px;
+      top: 105px;
       background: url("../img/kurzova.jpg");
       -webkit-background-size: contain;
       -o-background-size: contain;
@@ -261,6 +262,37 @@ ul {
     display: block;
     position: absolute;
     bottom: 0; }
+  .initial-screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    left: 0;
+    bottom: -190px;
+    background-image: url("../img/heometry.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    z-index: 9; }
+
+.infografics {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 250px 0;
+  background-color: #000;
+  z-index: 2; }
+  .infografics:after {
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 290px;
+    position: absolute;
+    z-index: 9;
+    background-image: url("../img/polygon-gray-1.png");
+    background-repeat: no-repeat;
+    bottom: -120px; }
 
 @media only screen and (max-width: 770px) {
   .align-left {
