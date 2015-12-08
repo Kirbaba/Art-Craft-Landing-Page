@@ -41,10 +41,10 @@
 						<img src="<?php bloginfo('template_directory'); ?>/img/macbook.png" alt="">
 					</div>
 					<ul class="grid">
-						  <li class="one"><span class="s"></span></li>
-						<!--   <li class="two"><span class="s"></span></li>
-						  <li class="three"><span class="s"></span></li>
-						  <li class="four"><span class="s"></span></li> -->
+						  <li class="one"><span></span></li>
+						  <li class="two"><span class="s"></span></li>
+						   <li class="three"><span class="s"></span></li>
+						  <li class="four"><span class="s"></span></li>
 					</ul>
 				</div>
 			</div>

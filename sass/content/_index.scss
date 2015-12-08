@@ -6,7 +6,7 @@
 	background-image: url('../img/bg1.jpg');
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	padding: 150px;
+	padding: 150px 150px 0;
 	h2 {
 		font-family: $b;
 		text-transform: uppercase;
@@ -80,18 +80,18 @@
 		}
 
 		/*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
-		// .s {
-		//   position: absolute;
-		//   /*30px smaller from each side*/
-		//   top: 30px;
-		//   left: 30px;
-		//   right: 30px;
-		//   bottom: 30px;
-		//   background: rgba(0, 0, 0, 0.5);
-		//   box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
-		//   /*Pushing down the shadow to give an elevated feel*/
-		//   transform: translateZ(-50px);
-		// }
+		.s {
+		  position: absolute;
+		  /*30px smaller from each side*/
+		  top: 30px;
+		  left: 30px;
+		  right: 30px;
+		  bottom: 30px;
+		  background: rgba(0, 0, 0, 0.5);
+		  box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+		  /*Pushing down the shadow to give an elevated feel*/
+		  transform: translateZ(-50px);
+		}
 
 		/*We will add a light gradient to the sides to give some lighting effect*/
 		.one {
@@ -108,25 +108,77 @@
 			     -o-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
 			        transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
 			/* transform: rotateX(46deg) rotateZ(-25deg); */
-		  background: url("http://thecodeplayer.com/uploads/media/m1.png");
+		  background: url("../img/alterus.jpg");
+		  -webkit-background-size: contain;
+		       -o-background-size: contain;
+		          background-size: contain;
 		}
 
 		.two {
-		  background: 
-		    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
-		    url("http://thecodeplayer.com/uploads/media/m2.png");
+			height: 250px;
+		  width: 320px;
+		  float: left;
+		  left: 150px;
+			top: 290px;
+		  list-style-type: none;
+		  /*Hide the lighting gradient from the front face*/
+		  background-size: 0, cover;
+		  -webkit-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+			   -moz-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+			    -ms-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+			     -o-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+			        transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+		  /*Preserve 3D style for children(pseudo elements)*/
+		  transform-style: preserve-3d;
+			position: absolute;
+		  background:  url("../img/skalolazy.jpg");
+		  -webkit-background-size: contain;
+		       -o-background-size: contain;
+		          background-size: contain;
 		}
 
 		.three {
-		  background: 
-		    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
-		    url("http://thecodeplayer.com/uploads/media/m3.png");
+			height: 285px;
+		  width: 370px;
+		  float: left;
+	     left: 300px;
+    	top: 180px;
+		  list-style-type: none;
+		  /*Hide the lighting gradient from the front face*/
+		  
+		  -webkit-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+			   -moz-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+			    -ms-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+			     -o-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+			        transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+		  /*Preserve 3D style for children(pseudo elements)*/
+		  transform-style: preserve-3d;
+			position: absolute;
+		  background: url("../img/generator.jpg");
+		  -webkit-background-size: contain;
+		       -o-background-size: contain;
+		          background-size: contain;
 		}
 
 		.four {
-		  background: 
-		    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
-		    url("http://thecodeplayer.com/uploads/media/m4.png");
+			right: 35px;
+			top: 205px;
+			background: url("../img/kurzova.jpg");
+			-webkit-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			list-style-type: none;
+		  	/*Hide the lighting gradient from the front face*/		  
+			  -webkit-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+				   -moz-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+				    -ms-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+				     -o-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+				        transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+		  	/*Preserve 3D style for children(pseudo elements)*/
+		  	transform-style: preserve-3d;
+			position: absolute;
+			height: 325px;
+			width: 490px;
 		}
 	}
 	&--macbook {

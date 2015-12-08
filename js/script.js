@@ -27,5 +27,13 @@ jQuery(function ($) {
         e.preventDefault();
         $(this).toggleClass('hamburger-slim--active');
     });
-}
+});
+
+jQuery(window).scroll(function() {
+    if (jQuery(".navigation").offset().top > 80) {
+        jQuery(".navigation").addClass("navigation--onScroll");           
+    } else {
+        jQuery(".navigation").removeClass("navigation--onScroll");       
+    }
+});
 
