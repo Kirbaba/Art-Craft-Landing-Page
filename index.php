@@ -53,7 +53,110 @@
 
 	<section class="infografics">
 		<div class="container">
-			<div class="row"></div>
+			<div class="row">
+				<h2>ДЛЯ ПРИВЛЕЧЕНИЯ <span>МАКСИМАЛЬНОГО</span><br>
+					КОЛИЧЕСТВА КЛИЕНТОВ МЫ ИСПОЛЬЗУЕМ:</h2>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_1.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>ЭКСКЛЮЗИВНЫЙ ДИЗАЙН</h4>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Дизайн - это первое, на
+								что обращает внимание
+								посетитель.
+								Эксклюзивный дизайн - 
+								наша фишка</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_2.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>СОВРЕМЕННЫЕ ЭФФЕКТЫ</h4>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Параллакс, анимация,
+								видеофон и другие
+								эффекты - все это сделает 
+								ваш сайт уникальным и 
+								запоминающимся.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_3.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>ПРОДАЮЩИЕ<br>ТЕКСТЫ</h4>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Дизайн - это первое, на
+								что обращает внимание
+								посетитель.
+								Эксклюзивный дизайн - 
+								наша фишка</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_4.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>АДАПТИВНАЯ<br>ВЕРСТКА</h4>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Сайты адаптированные 
+								подмобильные 
+								устройства имеют 
+								преимущества в
+								Яндекс и Google</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_5.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>ГЕОТАРГЕТИНГ</h4>
+							<p>Привет, Донецк</p>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Замена информации
+								относительно
+								местоположения
+								посетителя.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="infografics__item">
+						<div class="infografics__item--icon">
+							<img src="<?php bloginfo('template_directory'); ?>/img/infograf_6.png" alt="">
+						</div>
+						<div class="infografics__item--title">
+							<h4>ПРОДАЮЩИЕ<br>ТЕКСТЫ</h4>
+						</div>
+						<div class="infografics__item--desc">
+							<p>Наш опыт принесет Вам
+								максимальное количество
+								новых клиентов!</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 <?php wp_footer(); ?>

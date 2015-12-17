@@ -115,7 +115,8 @@ ul {
   background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  padding: 150px 150px 0; }
+  padding: 150px 150px 0;
+  background-attachment: fixed; }
   .initial-screen h2 {
     font-family: "QanelasBold";
     text-transform: uppercase;
@@ -293,6 +294,76 @@ ul {
     background-image: url("../img/polygon-gray-1.png");
     background-repeat: no-repeat;
     bottom: -120px; }
+  .infografics h2 {
+    color: #FCFBFB;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "QanelasMedium";
+    line-height: 45px; }
+    .infografics h2 span {
+      color: #000;
+      background-color: #FDE803; }
+  .infografics .infografics__item {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 25px 0; }
+    .infografics .infografics__item--icon {
+      height: 150px;
+      width: 100%;
+      display: block;
+      position: relative; }
+      .infografics .infografics__item--icon img {
+        display: block;
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .infografics .infografics__item--title {
+      display: block;
+      width: 65%;
+      margin: 15px auto;
+      height: 44px; }
+      .infografics .infografics__item--title h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        color: #FDFBFB;
+        margin: 0; }
+      .infografics .infografics__item--title p {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        color: #FDFBFB;
+        margin: 0;
+        font-family: "QanelasLight"; }
+    .infografics .infografics__item--desc {
+      display: block;
+      position: relative;
+      width: 80%;
+      margin: 25px auto;
+      height: 145px;
+      padding: 15px;
+      background-color: #FDE803; }
+      .infografics .infografics__item--desc p {
+        font-size: 15px;
+        color: #2E2B04; }
+      .infografics .infografics__item--desc:before {
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid #FDE803;
+        position: relative;
+        top: -30px;
+        /* left: 50%; */
+        margin: 0 auto; }
 
 @media only screen and (max-width: 770px) {
   .align-left {

@@ -7,6 +7,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	padding: 150px 150px 0;
+	background-attachment: fixed;
 	h2 {
 		font-family: $b;
 		text-transform: uppercase;
@@ -221,6 +222,88 @@
 		background-image: url('../img/polygon-gray-1.png');
 		background-repeat: no-repeat;
 		bottom: -120px;
+	}
+	h2 {
+		color: #FCFBFB;
+		font-size: 35px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $m;
+		line-height: 45px;
+		span {
+			color: #000;
+			background-color: #FDE803;
+		}
+	}
+	.infografics__item {
+		display: block;
+		float: left;
+		position: relative;
+		margin: 25px 0;
+		&--icon {
+			height: 150px;
+			width: 100%;
+			display: block;
+			position: relative;
+			img {
+				display: block;
+			    width: 25%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&--title {
+			display: block;
+			width: 65%;
+			margin: 15px auto;
+			height: 44px;
+			h4 {
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 300;
+				font-size: 20px;
+				color: #FDFBFB;
+				margin: 0;
+			}
+			p {
+				font-size: 12px;
+				text-align: center;
+				font-weight: 300;
+				font-size: 14px;
+				color: #FDFBFB;	
+				margin: 0;	
+				font-family: $l;	
+			}
+		}
+	
+		&--desc {
+			display: block;
+			position: relative;
+			width: 80%;
+			margin: 25px auto;
+			height: 145px;
+			padding: 15px;
+			background-color: #FDE803;
+			p {
+				font-size: 15px;
+				color: #2E2B04;
+			}
+			&:before {
+				display: block;
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 15px solid #FDE803;
+				position: relative;
+				top: -30px;
+				/* left: 50%; */
+				margin: 0 auto;
+			}
+		}
 	}
 }
 
