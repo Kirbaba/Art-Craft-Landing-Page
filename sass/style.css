@@ -21,6 +21,9 @@
 body {
   font-family: "QanelasMedium"; }
 
+html, body {
+  height: 100%; }
+
 a {
   text-decoration: none; }
   a:hover, a:focus, a:active {
@@ -44,39 +47,19 @@ ul {
 .align-right {
   text-align: right; }
 
-.hamburger-slim {
-  background: transparent;
-  /* margin: 60px auto 40px; */
-  position: relative;
-  height: 30px;
-  width: 50px;
-  display: none;
-  float: right;
-  top: 10px;
-  right: 15px;
-  z-index: 99; }
-  .hamburger-slim:before, .hamburger-slim:after {
-    background: #db5523;
-    backface-visibility: hidden;
-    content: "";
-    height: 2px;
-    left: 0;
-    transition: 0.75s;
-    width: 50px; }
-  .hamburger-slim:before {
-    box-shadow: #db5523 0 14px 0 0;
-    position: absolute;
-    top: 0; }
-  .hamburger-slim:after {
-    position: absolute;
-    top: 28px; }
-  .hamburger-slim--active:before {
-    box-shadow: transparent 0 0 0 0;
-    top: 15px;
-    transform: rotate(225deg); }
-  .hamburger-slim--active:after {
-    top: 15px;
-    transform: rotate(315deg); }
+.md-imac {
+  font-size: .65em;
+  margin: 0 auto; }
+  .md-imac .md-foot {
+    position: relative; }
+    .md-imac .md-foot:after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); }
 
 .navigation {
   top: 80px;
@@ -107,263 +90,102 @@ ul {
   .navigation--onScroll .navbar-nav > li > a {
     color: #fff; }
 
-.initial-screen {
+.home_screen {
   display: block;
   float: left;
   position: relative;
-  width: 100%;
   background-image: url("../img/bg1.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  padding: 150px 150px 0;
-  background-attachment: fixed; }
-  .initial-screen h2 {
-    font-family: "QanelasBold";
-    text-transform: uppercase;
-    color: #9D8F5F;
-    font-size: 50px;
-    text-align: right; }
-  .initial-screen__slider {
-    display: block;
-    float: left;
-    position: relative;
-    width: 100%;
-    height: 630px;
-    z-index: 99;
-    /*Left and Bottom Sides*/
-    /*Left Side*/
-    /*Bottom Side*/
-    /*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
-    /*We will add a light gradient to the sides to give some lighting effect*/ }
-    .initial-screen__slider .grid {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      /*3D Transform*/
-      /*Preserve 3D style for children*/
-      transform-style: preserve-3d; }
-    .initial-screen__slider .grid li:before,
-    .initial-screen__slider .grid li:after {
-      content: '';
-      position: absolute;
-      /*100% height and width*/
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: inherit;
-      background-size: cover; }
-    .initial-screen__slider .grid li:before {
-      transform-origin: left center;
-      transform: rotateY(90deg);
-      /*Reducing the width of the left side for a flat feel*/
-      width: 5px; }
-    .initial-screen__slider .grid li:after {
-      transform-origin: bottom center;
-      transform: rotateX(90deg);
-      /*Reducing the height*/
-      height: 5px;
-      top: auto;
-      bottom: 0;
-      /*Background fix - start the background from the bottom*/
-      background-position: bottom center; }
-    .initial-screen__slider .s {
-      position: absolute;
-      /*30px smaller from each side*/
-      top: 30px;
-      left: 30px;
-      right: 30px;
-      bottom: 30px;
-      background: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
-      /*Pushing down the shadow to give an elevated feel*/
-      transform: translateZ(-50px); }
-    .initial-screen__slider .one {
-      height: 189px;
-      position: absolute;
-      width: 300px;
-      float: left;
-      left: 79px;
-      top: 323px;
-      transform-origin: 0%;
-      -webkit-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
-      -moz-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
-      -ms-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
-      -o-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
-      transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
-      /* transform: rotateX(46deg) rotateZ(-25deg); */
-      background: url("../img/alterus.jpg");
-      -webkit-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain; }
-    .initial-screen__slider .two {
-      height: 250px;
-      width: 320px;
-      float: left;
-      left: 150px;
-      top: 190px;
-      list-style-type: none;
-      /*Hide the lighting gradient from the front face*/
-      background-size: 0, cover;
-      -webkit-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
-      -moz-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
-      -ms-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
-      -o-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
-      transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
-      /*Preserve 3D style for children(pseudo elements)*/
-      transform-style: preserve-3d;
-      position: absolute;
-      background: url("../img/skalolazy.jpg");
-      -webkit-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain; }
-    .initial-screen__slider .three {
-      height: 285px;
-      width: 370px;
-      float: left;
-      left: 300px;
-      top: 80px;
-      list-style-type: none;
-      /*Hide the lighting gradient from the front face*/
-      -webkit-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
-      -moz-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
-      -ms-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
-      -o-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
-      transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
-      /*Preserve 3D style for children(pseudo elements)*/
-      transform-style: preserve-3d;
-      position: absolute;
-      background: url("../img/generator.jpg");
-      -webkit-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain; }
-    .initial-screen__slider .four {
-      right: 35px;
-      top: 105px;
-      background: url("../img/kurzova.jpg");
-      -webkit-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain;
-      list-style-type: none;
-      /*Hide the lighting gradient from the front face*/
-      -webkit-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
-      -moz-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
-      -ms-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
-      -o-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
-      transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
-      /*Preserve 3D style for children(pseudo elements)*/
-      transform-style: preserve-3d;
-      position: absolute;
-      height: 325px;
-      width: 490px; }
-  .initial-screen--macbook {
-    display: block;
-    position: absolute;
-    bottom: 0; }
-  .initial-screen:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 470px;
-    left: 0;
-    bottom: -190px;
-    background-image: url("../img/heometry.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    z-index: 9; }
-
-.infografics {
-  display: block;
-  float: left;
-  position: relative;
+  height: 100%;
   width: 100%;
-  padding: 250px 0;
-  background-color: #000;
-  z-index: 2; }
-  .infografics:after {
-    content: '';
-    width: 100%;
-    left: 0;
-    height: 290px;
-    position: absolute;
-    z-index: 9;
-    background-image: url("../img/polygon-gray-1.png");
-    background-repeat: no-repeat;
-    bottom: -120px; }
-  .infografics h2 {
-    color: #FCFBFB;
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "QanelasMedium";
-    line-height: 45px; }
-    .infografics h2 span {
-      color: #000;
-      background-color: #FDE803; }
-  .infografics .infografics__item {
+  background-position: 50% 0; }
+  .home_screen--title {
+    display: block;
+    width: 35%;
+    margin: 0 auto; }
+    .home_screen--title h2 {
+      font-size: 34px; }
+    .home_screen--title h4 {
+      font-size: 22px; }
+  .home_screen--worckspace {
     display: block;
     float: left;
     position: relative;
-    margin: 25px 0; }
-    .infografics .infografics__item--icon {
-      height: 150px;
-      width: 100%;
+    width: 100%; }
+    .home_screen--worckspace--ipad {
       display: block;
-      position: relative; }
-      .infografics .infografics__item--icon img {
-        display: block;
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    .infografics .infografics__item--title {
-      display: block;
-      width: 65%;
-      margin: 15px auto;
-      height: 44px; }
-      .infografics .infografics__item--title h4 {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 300;
-        font-size: 20px;
-        color: #FDFBFB;
-        margin: 0; }
-      .infografics .infografics__item--title p {
-        font-size: 12px;
-        text-align: center;
-        font-weight: 300;
-        font-size: 14px;
-        color: #FDFBFB;
-        margin: 0;
-        font-family: "QanelasLight"; }
-    .infografics .infografics__item--desc {
-      display: block;
+      width: 260px;
+      margin: -185px 25% 0;
+      z-index: 9;
       position: relative;
-      width: 80%;
-      margin: 25px auto;
-      height: 145px;
-      padding: 15px;
-      background-color: #FDE803; }
-      .infografics .infografics__item--desc p {
-        font-size: 15px;
-        color: #2E2B04; }
-      .infografics .infografics__item--desc:before {
-        display: block;
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 15px solid #FDE803;
+      transform-style: preserve-3d;
+      perspective-origin: 50%;
+      -webkit-perspective: 1600;
+      -moz-perspective: 1600;
+      -ms-perspective: 1600;
+      perspective: 1600;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      transition: all 0.5s ease-out;
+      cursor: pointer; }
+      .home_screen--worckspace--ipad .md-ipad {
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
+        -moz-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
+        -webkit-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
+        -o-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
+        -ms-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
+        perspective: 1600px;
+        -webkit-perspective: 1600px;
+        perspective-origin: 100% 100%;
+        -webkit-perspective-origin: 100% 100%;
+        border-radius: 16px 5px 7px 11px;
+        border-left: 3px solid #6d6b65;
+        border-bottom: 3px solid #6d6b65;
+        font-size: .25em;
         position: relative;
-        top: -30px;
-        /* left: 50%; */
-        margin: 0 auto; }
+        z-index: 9;
+        background-image: url("../img/shadow-1.png");
+        background-repeat: no-repeat;
+        background-position: 0 100%; }
+        .home_screen--worckspace--ipad .md-ipad:after {
+          content: "";
+          width: 103%;
+          height: 100%;
+          border-radius: 14px 5px 7px 14px;
+          border-left: 3px solid #fff;
+          border-bottom: 3px solid #fff;
+          position: absolute;
+          top: 4px;
+          left: -7px;
+          z-index: -1;
+          background-color: transparent; }
+      .home_screen--worckspace--ipad .ipad--stand {
+        display: block;
+        width: 58%;
+        position: absolute;
+        bottom: -26px;
+        z-index: 999;
+        left: 28px; }
+      .home_screen--worckspace--ipad--stand {
+        position: relative; }
+        .home_screen--worckspace--ipad--stand:before {
+          content: "";
+          width: 150px;
+          display: block;
+          height: 1px;
+          border-radius: 100%;
+          background: transparent;
+          position: absolute;
+          -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -66px 10px 31px 7px rgba(0, 0, 0, 0.3);
+          z-index: -1;
+          left: 34px; }
 
 @media only screen and (max-width: 770px) {
   .align-left {

@@ -6,9 +6,7 @@ define('TM_URL', get_template_directory_uri(__FILE__));
 require_once TM_DIR . '/lib/Parser.php';
 
 function add_style(){
-    wp_enqueue_style( 'my-bootstrap-extension', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1');    
-    wp_enqueue_style( 'imac', get_template_directory_uri() . '/css/imac.css', array(), '1');
-    wp_enqueue_style( 'ipad', get_template_directory_uri() . '/css/ipad.css', array(), '1');
+    wp_enqueue_style( 'my-bootstrap-extension', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1');
     wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/css/style.css', array('my-bootstrap-extension'), '1');
     wp_enqueue_style( 'my-sass', get_template_directory_uri() . '/sass/style.css', array('my-bootstrap-extension'), '1');
     wp_enqueue_style( 'fotorama', get_template_directory_uri() . '/css/fotorama.css', array('my-bootstrap-extension'), '1');

@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'QanelasBlack';
+  src: url("../fonts/Qanelas/QanelasBlack.eot");
+  src: url("../fonts/Qanelas/QanelasBlack.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasBlack.woff2") format("woff2"), url("../fonts/Qanelas/QanelasBlack.woff") format("woff"), url("../fonts/Qanelas/QanelasBlack.ttf") format("truetype"), url("../fonts/Qanelas/QanelasBlack.svg#QanelasBlack") format("svg"); }
+@font-face {
+  font-family: 'QanelasBold';
+  src: url("../fonts/Qanelas/QanelasBold.eot");
+  src: url("../fonts/Qanelas/QanelasBold.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasBold.woff2") format("woff2"), url("../fonts/Qanelas/QanelasBold.woff") format("woff"), url("../fonts/Qanelas/QanelasBold.ttf") format("truetype"), url("../fonts/Qanelas/QanelasBold.svg#QanelasBold") format("svg"); }
+@font-face {
+  font-family: 'QanelasMedium';
+  src: url("../fonts/Qanelas/QanelasMedium.eot");
+  src: url("../fonts/Qanelas/QanelasMedium.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasMedium.woff2") format("woff2"), url("../fonts/Qanelas/QanelasMedium.woff") format("woff"), url("../fonts/Qanelas/QanelasMedium.ttf") format("truetype"), url("../fonts/Qanelas/QanelasMedium.svg#QanelasMedium") format("svg"); }
+@font-face {
+  font-family: 'QanelasLight';
+  src: url("../fonts/Qanelas/QanelasLight.eot");
+  src: url("../fonts/Qanelas/QanelasLight.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasLight.woff2") format("woff2"), url("../fonts/Qanelas/QanelasLight.woff") format("woff"), url("../fonts/Qanelas/QanelasLight.ttf") format("truetype"), url("../fonts/Qanelas/QanelasLight.svg#QanelasLight") format("svg"); }
+@font-face {
+  font-family: 'QanelasUltraLight';
+  src: url("../fonts/Qanelas/QanelasUltraLight.eot");
+  src: url("../fonts/Qanelas/QanelasUltraLight.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasUltraLight.woff2") format("woff2"), url("../fonts/Qanelas/QanelasUltraLight.woff") format("woff"), url("../fonts/Qanelas/QanelasUltraLight.ttf") format("truetype"), url("../fonts/Qanelas/QanelasUltraLight.svg#QanelasUltraLight") format("svg"); }
+body {
+  font-family: "QanelasMedium"; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.block_title {
+  color: #fff;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 15px; }
+
+.p0 {
+  padding: 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.hamburger-slim {
+  background: transparent;
+  /* margin: 60px auto 40px; */
+  position: relative;
+  height: 30px;
+  width: 50px;
+  display: none;
+  float: right;
+  top: 10px;
+  right: 15px;
+  z-index: 99; }
+  .hamburger-slim:before, .hamburger-slim:after {
+    background: #db5523;
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: 0.75s;
+    width: 50px; }
+  .hamburger-slim:before {
+    box-shadow: #db5523 0 14px 0 0;
+    position: absolute;
+    top: 0; }
+  .hamburger-slim:after {
+    position: absolute;
+    top: 28px; }
+  .hamburger-slim--active:before {
+    box-shadow: transparent 0 0 0 0;
+    top: 15px;
+    transform: rotate(225deg); }
+  .hamburger-slim--active:after {
+    top: 15px;
+    transform: rotate(315deg); }
+
+.navigation {
+  top: 80px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "QanelasBold"; }
+
+.navbar-default {
+  background-color: transparent;
+  border: none; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 21px; }
+
+.navigation--onScroll {
+  top: 0;
+  background-color: #000;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .navigation--onScroll .navbar-nav > li > a {
+    color: #fff; }
+
+.initial-screen {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 150px 150px 0;
+  background-attachment: fixed; }
+  .initial-screen h2 {
+    font-family: "QanelasBold";
+    text-transform: uppercase;
+    color: #9D8F5F;
+    font-size: 50px;
+    text-align: right; }
+  .initial-screen__slider {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 630px;
+    z-index: 99;
+    /*Left and Bottom Sides*/
+    /*Left Side*/
+    /*Bottom Side*/
+    /*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
+    /*We will add a light gradient to the sides to give some lighting effect*/ }
+    .initial-screen__slider .grid {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      /*3D Transform*/
+      /*Preserve 3D style for children*/
+      transform-style: preserve-3d; }
+    .initial-screen__slider .grid li:before,
+    .initial-screen__slider .grid li:after {
+      content: '';
+      position: absolute;
+      /*100% height and width*/
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      background-size: cover; }
+    .initial-screen__slider .grid li:before {
+      transform-origin: left center;
+      transform: rotateY(90deg);
+      /*Reducing the width of the left side for a flat feel*/
+      width: 5px; }
+    .initial-screen__slider .grid li:after {
+      transform-origin: bottom center;
+      transform: rotateX(90deg);
+      /*Reducing the height*/
+      height: 5px;
+      top: auto;
+      bottom: 0;
+      /*Background fix - start the background from the bottom*/
+      background-position: bottom center; }
+    .initial-screen__slider .s {
+      position: absolute;
+      /*30px smaller from each side*/
+      top: 30px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+      /*Pushing down the shadow to give an elevated feel*/
+      transform: translateZ(-50px); }
+    .initial-screen__slider .one {
+      height: 189px;
+      position: absolute;
+      width: 300px;
+      float: left;
+      left: 79px;
+      top: 323px;
+      transform-origin: 0%;
+      -webkit-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
+      -moz-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
+      -ms-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
+      -o-transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
+      transform: perspective(3008px) rotateX(18deg) rotateY(8deg) rotateZ(-21deg) skewX(12deg);
+      /* transform: rotateX(46deg) rotateZ(-25deg); */
+      background: url("../img/alterus.jpg");
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; }
+    .initial-screen__slider .two {
+      height: 250px;
+      width: 320px;
+      float: left;
+      left: 150px;
+      top: 190px;
+      list-style-type: none;
+      /*Hide the lighting gradient from the front face*/
+      background-size: 0, cover;
+      -webkit-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+      -moz-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+      -ms-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+      -o-transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+      transform: perspective(3008px) rotateX(19deg) rotateY(23deg) rotateZ(-22deg);
+      /*Preserve 3D style for children(pseudo elements)*/
+      transform-style: preserve-3d;
+      position: absolute;
+      background: url("../img/skalolazy.jpg");
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; }
+    .initial-screen__slider .three {
+      height: 285px;
+      width: 370px;
+      float: left;
+      left: 300px;
+      top: 80px;
+      list-style-type: none;
+      /*Hide the lighting gradient from the front face*/
+      -webkit-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+      -moz-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+      -ms-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+      -o-transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+      transform: perspective(3008px) rotateX(23deg) rotateY(19deg) rotateZ(-14deg);
+      /*Preserve 3D style for children(pseudo elements)*/
+      transform-style: preserve-3d;
+      position: absolute;
+      background: url("../img/generator.jpg");
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; }
+    .initial-screen__slider .four {
+      right: 35px;
+      top: 105px;
+      background: url("../img/kurzova.jpg");
+      -webkit-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      list-style-type: none;
+      /*Hide the lighting gradient from the front face*/
+      -webkit-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+      -moz-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+      -ms-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+      -o-transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+      transform: perspective(3008px) rotateX(28deg) rotateY(27deg) rotateZ(-21deg);
+      /*Preserve 3D style for children(pseudo elements)*/
+      transform-style: preserve-3d;
+      position: absolute;
+      height: 325px;
+      width: 490px; }
+  .initial-screen--macbook {
+    display: block;
+    position: absolute;
+    bottom: 0; }
+  .initial-screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    left: 0;
+    bottom: -190px;
+    background-image: url("../img/heometry.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    z-index: 9; }
+
+.infografics {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 250px 0;
+  background-color: #000;
+  z-index: 2; }
+  .infografics:after {
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 290px;
+    position: absolute;
+    z-index: 9;
+    background-image: url("../img/polygon-gray-1.png");
+    background-repeat: no-repeat;
+    bottom: -120px; }
+  .infografics h2 {
+    color: #FCFBFB;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "QanelasMedium";
+    line-height: 45px; }
+    .infografics h2 span {
+      color: #000;
+      background-color: #FDE803; }
+  .infografics .infografics__item {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 25px 0; }
+    .infografics .infografics__item--icon {
+      height: 150px;
+      width: 100%;
+      display: block;
+      position: relative; }
+      .infografics .infografics__item--icon img {
+        display: block;
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .infografics .infografics__item--title {
+      display: block;
+      width: 65%;
+      margin: 15px auto;
+      height: 44px; }
+      .infografics .infografics__item--title h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        color: #FDFBFB;
+        margin: 0; }
+      .infografics .infografics__item--title p {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        color: #FDFBFB;
+        margin: 0;
+        font-family: "QanelasLight"; }
+    .infografics .infografics__item--desc {
+      display: block;
+      position: relative;
+      width: 80%;
+      margin: 25px auto;
+      height: 145px;
+      padding: 15px;
+      background-color: #FDE803; }
+      .infografics .infografics__item--desc p {
+        font-size: 15px;
+        color: #2E2B04; }
+      .infografics .infografics__item--desc:before {
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid #FDE803;
+        position: relative;
+        top: -30px;
+        /* left: 50%; */
+        margin: 0 auto; }
+
+@media only screen and (max-width: 770px) {
+  .align-left {
+    text-align: center; }
+
+  .align-right {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
