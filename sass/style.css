@@ -95,11 +95,34 @@ ul {
     position: relative; }
   .md-imac .md-screen {
     color: #edde4f; }
-    .md-imac .md-screen h3 {
+    .md-imac .md-screen h2 {
+      font: bold 300% Consolas, Monaco, monospace;
+      border-right: .1em solid black;
+      width: 16.5em;
+      width: 21ch;
+      margin: 2em 1em;
+      white-space: nowrap;
       overflow: hidden;
-      animation: type 4s steps(60, end); }
-      .md-imac .md-screen h3:nth-child(2) {
-        animation: type2 8s steps(60, end); }
+      -webkit-animation: typing 5s steps(21, end), blink-caret 0.5s step-end infinite alternate; }
+    .md-imac .md-screen h3 {
+      color: lime;
+      font-family: "Courier";
+      font-size: 12px;
+      margin: 10px 0 0 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 30em;
+      animation: type 5s steps(60, end);
+      -webkit-animation-delay: 5s;
+      -moz-animation-delay: 5s;
+      -o-animation-delay: 5s;
+      animation-delay: 5s; }
+    .md-imac .md-screen h3:nth-child(2) {
+      animation: type2 8s steps(60, end);
+      -webkit-animation-delay: 10s;
+      -moz-animation-delay: 10s;
+      -o-animation-delay: 10s;
+      animation-delay: 10s; }
   .md-imac .md-foot {
     position: relative; }
     .md-imac .md-foot:after {
@@ -121,6 +144,18 @@ ul {
     width: 0; }
   100% {
     width: 100; } }
+@keyframes blink {
+  to {
+    opacity: .0; } }
+::selection {
+  background: black; }
+
+@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent; } }
 .navigation {
   top: 80px;
   -webkit-transition: all 0.3s linear;
