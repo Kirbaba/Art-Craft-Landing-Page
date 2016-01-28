@@ -14,44 +14,51 @@
 <body>
 
 <section class="home_screen">
-	<div class="home_screen--title">
-		<h2>ОСОБЕННЫЙ LANDING PAGE</h2>
-		<h4>для особенных компаний</h4>
-	</div>
-	<div class="home_screen--worckspace">
-		<div class="home_screen--worckspace--imac">			
-			<div class="md-imac md-glare">
-			    <div class="md-body">
-			        <div class="md-top">
-			            <div class="md-camera"></div>
-
-			            <div class="md-screen">
-			 		<!-- Your content here -->
-			            </div>
-			        </div>
-			    </div>
-
-			    <div class="md-base">
-			        <div class="md-stand"></div>
-			        <div class="md-foot"></div>
-			    </div>
-			</div>
+	<div class="container-wrap">
+		<div class="home_screen--title">
+			<h2>ОСОБЕННЫЙ LANDING PAGE</h2>
+			<h4>для особенных компаний</h4>
 		</div>
-		<div class="home_screen--worckspace--ipad">
-						
-			<div class="md-ipad md-white-device md-glare">
-			    <div class="md-body">
-			        <div class="md-front-camera"></div>
-
-			        <div class="md-screen">
-				  <-- Your content here -->
-			        </div>
-
-			        <button class="md-home-button"></button>
-			    </div>
+		<div class="home_screen--worckspace">
+			<div class="home_screen--shelf">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Curved_Shelf.png" alt="">
 			</div>
-			<div class="home_screen--worckspace--ipad--stand">
-				<img class="ipad--stand" src="<?php bloginfo('template_directory'); ?>/img/Ipad-stand.png" alt="">
+			<div class="home_screen--worckspace--imac">			
+				<div class="md-imac md-glare">
+				    <div class="md-body">
+				        <div class="md-top">
+				            <div class="md-camera"></div>
+
+				            <div class="md-screen">
+
+				            </div>
+				        </div>
+				    </div>
+
+				    <div class="md-base">
+				        <div class="md-stand"></div>
+				        <div class="md-foot"></div>
+				    </div>
+				</div>
+			</div>
+			<div class="home_screen--worckspace--ipad">							
+				<div class="md-ipad md-white-device md-glare">
+				    <div class="md-body">
+				        <div class="md-front-camera"></div>
+
+				        <div class="md-screen">
+					  <-- Your content here -->
+				        </div>
+
+				        <button class="md-home-button"></button>
+				    </div>
+				</div>
+				<div class="home_screen--worckspace--ipad--stand">
+					<img class="ipad--stand" src="<?php bloginfo('template_directory'); ?>/img/Ipad-stand.png" alt="">
+				</div>
+			</div>
+			<div class="home_screen--worckspace--lamp">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Yellow_lamp.png" alt="">
 			</div>
 		</div>
 	</div>
