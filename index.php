@@ -30,7 +30,9 @@
 				            <div class="md-camera"></div>
 
 				            <div class="md-screen">
-
+					            <h2>Hello</h2>
+								<h3>We are Art Craft Web studio</h3>
+								<h3>Hope you enjoy our wirld!!!</h3>
 				            </div>
 				        </div>
 				    </div>
@@ -47,7 +49,7 @@
 				        <div class="md-front-camera"></div>
 
 				        <div class="md-screen">
-					  <-- Your content here -->
+					  		<img src="<?php bloginfo('template_directory'); ?>/img/replace-with-your-ui1.jpg" alt="">
 				        </div>
 
 				        <button class="md-home-button"></button>

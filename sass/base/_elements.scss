@@ -1,6 +1,50 @@
 .md-imac {
   font-size: .54em;
   margin: 0 auto;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-image: url("../img/basicShadowImageUrl.png");
+    opacity: .2;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: covern;
+    background-size: cover;
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -110px;
+    right: -70px;
+    width: 100%;
+    background-image: url('../img/Landing_39_kements-11.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    height: 150px;
+  }
+  .md-body{
+    position: relative;   
+  }
+  .md-screen {
+    color: #edde4f;
+    h3 {
+      overflow: hidden;
+      animation: type 4s steps(60, end); 
+      &:nth-child(2){
+        animation: type2 8s steps(60, end);
+      }
+    }
+  }
   .md-foot {
     position: relative;
     &:after {
@@ -15,3 +59,12 @@
   }
 }
 
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
