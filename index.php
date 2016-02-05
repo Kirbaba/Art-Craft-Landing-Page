@@ -20,14 +20,16 @@
 			<h4>для особенных компаний</h4>
 		</div>
 		<div class="home_screen--worckspace">
-			<div class="home_screen--shelf">
+			<a href="#" class="home_screen--shelf">
+				<span class="link-title">Стоимость</span>
 				<img src="<?php bloginfo('template_directory'); ?>/img/Curved_Shelf.png" alt="">
 				<img class="ball" src="<?php bloginfo('template_directory'); ?>/img/Object.png" alt="">
-			</div>
-			<div class="home_screen--cloud">
+			</a>
+			<a href="#" class="home_screen--cloud">
+				<span class="link-title">Связаться с нами</span>
 				<img src="<?php bloginfo('template_directory'); ?>/img/Curves-7.png" alt="">
 				<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
-			</div>
+			</a>
 			<div class="home_screen--worckspace--imac">			
 				<div class="md-imac md-glare">
 				    <div class="md-body">
@@ -38,9 +40,9 @@
 								<span id="user-caption">
 									hi! <br>
 									We are amazing! <br>
-									Петр I умер 28 января 1725 г., не назначив преемника престола. Началась длительная борьба различных дворянских группировок за власть. <br>
-									Lorem ipsum dolor sit amet. <br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatem dolores voluptates maiores reiciendis, similique pariatur rem perspiciatis provident! Deserunt consectetur, cumque culpa dolores provident enim. Delectus, quis. Laudantium, qui?
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur perspiciatis, ex repudiandae officia! Ullam magnam sed, ratione! Doloribus eaque, quas. <br>
+									<!-- Lorem ipsum dolor sit amet. <br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatem dolores voluptates maiores reiciendis, similique pariatur rem perspiciatis provident! Deserunt consectetur, cumque culpa dolores provident enim. Delectus, quis. Laudantium, qui? -->
 								</span>
 								<p class="console">
 								    <span></span><span id="caption"></span><span id="cursor">|</span>
@@ -55,17 +57,17 @@
 				    </div>
 				</div>
 			</div>
-			<div class="home_screen--worckspace--ipad">							
+			<div class="home_screen--worckspace--ipad">
+				<span class="link-title">Стоимость</span>							
 				<div class="md-ipad md-white-device md-glare">
 				    <div class="md-body">
 				        <div class="md-front-camera"></div>
-
 				        <div class="md-screen">
-					        <div class="fotorama"   data-loop="true"  data-arrows="false" data-click="true" data-swipe="true" data-autoplay="3000">
+					        <a href="#" class="fotorama"   data-loop="true"  data-arrows="false" data-click="true" data-swipe="true" data-autoplay="3000">					        	
 					        	<img src="<?php bloginfo('template_directory'); ?>/img/replace-with-your-ui1.jpg" alt="">
 					        	<img src="<?php bloginfo('template_directory'); ?>/img/screencapture-bmw-web-artcraft-com-1454661116692.png" alt="">
 					        	<img src="<?php bloginfo('template_directory'); ?>/img/screencapture-generator-web-artcraft-com-1454661048148.png" alt="">
-					        </div>					  		
+					        </a>					  		
 				        </div>
 
 				        <button class="md-home-button"></button>
@@ -75,20 +77,23 @@
 					<img class="ipad--stand" src="<?php bloginfo('template_directory'); ?>/img/Ipad-stand.png" alt="">
 				</div>
 			</div>
-			<div class="home_screen--worckspace--radio">
+			<a href="#" class="home_screen--worckspace--radio">
+				<span class="link-title">Акции</span>
 				<img src="<?php bloginfo('template_directory'); ?>/img/Radio.png" alt="">
 				<img src="<?php bloginfo('template_directory'); ?>/img/clock.png" alt="" class="clock">				
-			</div>
+			</a>
 			<div class="home_screen--worckspace--lamp">
 				<img src="<?php bloginfo('template_directory'); ?>/img/Yellow_lamp.png" alt="">				
 			</div>
 			<div class="home_screen--worckspace--books">
 				<img class="home_screen--worckspace--books--flag" src="<?php bloginfo('template_directory'); ?>/img/flag.png" alt="">
 				<img class="home_screen--worckspace--books--box" src="<?php bloginfo('template_directory'); ?>/img/Box.png" alt="">
-				<img src="<?php bloginfo('template_directory'); ?>/img/Books.png" alt="">
-				<img  class="home_screen--worckspace--books--tape"  src="<?php bloginfo('template_directory'); ?>/img/tape.png" alt="">
-
+				<img src="<?php bloginfo('template_directory'); ?>/img/Books.png" alt="">				
 			</div>
+			<a href="#" class="home_screen--tape">
+				<img  class="home_screen--tape--img"  src="<?php bloginfo('template_directory'); ?>/img/tape.png" alt="">
+				<span class="link-title">Наши услуги</span>
+			</a>
 		</div>
 	</div>
 </section>

@@ -52,6 +52,17 @@
 			transform: translateZ(0);
 			transition: all 0.5s ease-out;
 			cursor: pointer;
+			.link-title {
+				top: -65px;
+				left: -80px;
+				&:before {
+					background-image: url('../img/ar3.png');
+					width: 21px;
+					height: 23px;
+					right: -30px;
+					top: 20px;
+				}
+			}
 			.md-ipad {
 				transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
 				-moz-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(35deg) rotateZ(-10deg);
@@ -153,6 +164,17 @@
 				display: block;
 				left: 0;
 			}
+			.link-title {
+				bottom: -65px;
+				right: -45px;
+				&:before {
+					background-image: url('../img/ar2.png');
+					width: 21px;
+					height: 23px;
+					left: -30px;
+					top: 0;
+				}
+			}
 		}
 		&--books {
 			display: block;
@@ -160,6 +182,7 @@
 			right: 25px;
 			bottom: -10px;
 			z-index: 3;
+			
 			img {
 				-webkit-user-select: none;
 				   -moz-user-select: none;
@@ -174,12 +197,7 @@
     			bottom: 111px;
     			z-index: 3;
 			}
-			img.home_screen--worckspace--books--tape {
-				position: absolute;
-				left: -25px;
-    			bottom: -25px;
-    			z-index: 4;
-			}		
+			
 			img.home_screen--worckspace--books--flag {
 				position: absolute;
 				right: 10%;
@@ -196,11 +214,43 @@
 			}		
 		}
 	}
-	
+	&--tape {
+		position: absolute;
+		right: 5%;
+		bottom: 0;
+		&--img {
+			left: -100px;
+			z-index: 4;
+			position: relative;
+			top: 35px;
+		}		
+		.link-title {
+			bottom: -80px;
+			right: 0;
+			&:before {
+				background-image: url('../img/ar2.png');
+				width: 21px;
+				height: 23px;
+				left: -30px;
+				top: 0;
+			}
+		}
+	}
 	&--shelf {
 		position: absolute;
 		top: -50px;
 		left: 0;
+		.link-title {
+			top: -75px;
+			left: 75px;
+			&:before {
+				background-image: url('../img/ar1.png');
+				width: 21px;
+				height: 21px;
+				left: -25px;
+				top: 20px;
+			}
+		}
 		img {
 			-webkit-user-select: none;
 			   -moz-user-select: none;
@@ -222,6 +272,17 @@
 		position: absolute;
 		top: -80px;
 		right: 15%;
+		.link-title {
+			right: -175px;
+			top: -45px;
+			&:before {
+				background-image: url('../img/ar1.png');
+				width: 21px;
+				height: 21px;
+				left: -25px;
+				top: 20px;
+			}
+		}
 		img {
 			-webkit-user-select: none;
 			   -moz-user-select: none;

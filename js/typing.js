@@ -5,7 +5,6 @@ var caption = '';
 $(document).ready(function() {
     setInterval ('cursorAnimation()', 600);
     captionEl = $('#caption');
-    alert($('#user-caption').html());
     setTimeout(function () {
         testTypingEffect()
     }, 1000);
