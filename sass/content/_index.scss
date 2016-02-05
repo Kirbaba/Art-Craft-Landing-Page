@@ -16,10 +16,11 @@
 		margin: 0 auto 35px;
 		h2 {
 			font-size: 34px;
-			margin-top: 0;
+			margin: 0;
 		}
 		h4 {
 			font-size: 22px;
+			margin: 0;
 		}
 	}
 	&--worckspace {
@@ -123,6 +124,21 @@
 			position: absolute;
 			right: 10%;
 			bottom: -20px;
+			z-index: 4;
+			img {
+				-webkit-user-select: none;
+				   -moz-user-select: none;
+				    -ms-user-select: none;
+				        user-select: none;
+		    			 user-drag:none;
+			    -webkit-user-drag: none;
+			}			
+		}
+		&--radio {
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 15px;
 			img {
 				-webkit-user-select: none;
 				   -moz-user-select: none;
@@ -131,22 +147,56 @@
 		    			 user-drag:none;
 			    -webkit-user-drag: none;
 			}
-			
+			.clock {
+				bottom: -30px;
+				position: absolute;
+				display: block;
+				left: 0;
+			}
+		}
+		&--books {
+			display: block;
+			position: absolute;
+			right: 25px;
+			bottom: -10px;
+			z-index: 3;
+			img {
+				-webkit-user-select: none;
+				   -moz-user-select: none;
+				    -ms-user-select: none;
+				        user-select: none;
+		    			 user-drag:none;
+			    -webkit-user-drag: none;
+			}	
+			img.home_screen--worckspace--books--box {
+				position: absolute;
+				right: 35%;
+    			bottom: 111px;
+    			z-index: 3;
+			}
+			img.home_screen--worckspace--books--tape {
+				position: absolute;
+				left: -25px;
+    			bottom: -25px;
+    			z-index: 4;
+			}		
+			img.home_screen--worckspace--books--flag {
+				position: absolute;
+				right: 10%;
+    			bottom: 111px;
+    			z-index: 2;
+    			@include transition(.2s);
+    			&:hover {
+    				-webkit-transform: translateY(-10%);
+    				   -moz-transform: translateY(-10%);
+    				    -ms-transform: translateY(-10%);
+    				     -o-transform: translateY(-10%);
+    				        transform: translateY(-10%);
+    			}
+			}		
 		}
 	}
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 229px;
-		background-image: url('../img/1.png');
-		background-repeat: no-repeat;
-		-webkit-background-size: cover;
-		     -o-background-size: cover;
-		        background-size: cover;
-        bottom: -230px;
-	}
+	
 	&--shelf {
 		position: absolute;
 		top: -50px;
@@ -158,6 +208,38 @@
 			        user-select: none;
 		    			 user-drag:none;
 			    -webkit-user-drag: none;
+		}
+		img.ball {
+			position: absolute;
+			top: -17px;
+			left: 20%;
+		}
+	}
+	&--cloud {
+		display: block;
+		width: 139px;
+		height: 136px;
+		position: absolute;
+		top: -80px;
+		right: 15%;
+		img {
+			-webkit-user-select: none;
+			   -moz-user-select: none;
+			    -ms-user-select: none;
+			        user-select: none;
+		    			 user-drag:none;
+			    -webkit-user-drag: none;
+		}
+		img.logo {
+			position: absolute;
+			top: 25px;
+			left: 55%;
+			-webkit-transform: translateX(-50%);
+			   -moz-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			     -o-transform: translateX(-50%);
+			        transform: translateX(-50%);
+			
 		}
 	}
 }

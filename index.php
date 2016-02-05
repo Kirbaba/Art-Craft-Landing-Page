@@ -22,6 +22,11 @@
 		<div class="home_screen--worckspace">
 			<div class="home_screen--shelf">
 				<img src="<?php bloginfo('template_directory'); ?>/img/Curved_Shelf.png" alt="">
+				<img class="ball" src="<?php bloginfo('template_directory'); ?>/img/Object.png" alt="">
+			</div>
+			<div class="home_screen--cloud">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Curves-7.png" alt="">
+				<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
 			</div>
 			<div class="home_screen--worckspace--imac">			
 				<div class="md-imac md-glare">
@@ -30,9 +35,16 @@
 				            <div class="md-camera"></div>
 
 				            <div class="md-screen">
-					            <h2>Hello</h2>
-								<h3>We are Art Craft Web studio</h3>
-								<h3>Hope you enjoy our wirld!!!</h3>
+								<span id="user-caption">
+									hi! <br>
+									We are amazing! <br>
+									Петр I умер 28 января 1725 г., не назначив преемника престола. Началась длительная борьба различных дворянских группировок за власть. <br>
+									Lorem ipsum dolor sit amet. <br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatem dolores voluptates maiores reiciendis, similique pariatur rem perspiciatis provident! Deserunt consectetur, cumque culpa dolores provident enim. Delectus, quis. Laudantium, qui?
+								</span>
+								<p class="console">
+								    <span></span><span id="caption"></span><span id="cursor">|</span>
+								</p>
 				            </div>
 				        </div>
 				    </div>
@@ -49,7 +61,11 @@
 				        <div class="md-front-camera"></div>
 
 				        <div class="md-screen">
-					  		<img src="<?php bloginfo('template_directory'); ?>/img/replace-with-your-ui1.jpg" alt="">
+					        <div class="fotorama"   data-loop="true"  data-arrows="false" data-click="true" data-swipe="true" data-autoplay="3000">
+					        	<img src="<?php bloginfo('template_directory'); ?>/img/replace-with-your-ui1.jpg" alt="">
+					        	<img src="<?php bloginfo('template_directory'); ?>/img/screencapture-bmw-web-artcraft-com-1454661116692.png" alt="">
+					        	<img src="<?php bloginfo('template_directory'); ?>/img/screencapture-generator-web-artcraft-com-1454661048148.png" alt="">
+					        </div>					  		
 				        </div>
 
 				        <button class="md-home-button"></button>
@@ -59,12 +75,27 @@
 					<img class="ipad--stand" src="<?php bloginfo('template_directory'); ?>/img/Ipad-stand.png" alt="">
 				</div>
 			</div>
+			<div class="home_screen--worckspace--radio">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Radio.png" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/img/clock.png" alt="" class="clock">				
+			</div>
 			<div class="home_screen--worckspace--lamp">
-				<img src="<?php bloginfo('template_directory'); ?>/img/Yellow_lamp.png" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Yellow_lamp.png" alt="">				
+			</div>
+			<div class="home_screen--worckspace--books">
+				<img class="home_screen--worckspace--books--flag" src="<?php bloginfo('template_directory'); ?>/img/flag.png" alt="">
+				<img class="home_screen--worckspace--books--box" src="<?php bloginfo('template_directory'); ?>/img/Box.png" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Books.png" alt="">
+				<img  class="home_screen--worckspace--books--tape"  src="<?php bloginfo('template_directory'); ?>/img/tape.png" alt="">
+
 			</div>
 		</div>
 	</div>
 </section>
+
+<footer class="polygon">
+	
+</footer>
 
 
 <?php wp_footer(); ?>

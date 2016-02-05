@@ -36,41 +36,28 @@
     position: relative;   
   }
   .md-screen {
-    color: #edde4f;
+    padding: 5px;
+    -ms-overflow-y: scroll;
+        overflow-y: scroll;
     h2 {
       font: bold 300% Consolas, Monaco, monospace;
-      border-right: .1em solid black;
-      width: 16.5em; 
-      width: 21ch;
-      margin: 2em 1em;
-      white-space: nowrap;
-      overflow: hidden;
-      -webkit-animation: typing 5s steps(21, end),
-             blink-caret .5s step-end infinite alternate;
+       color: lime; 
+      margin: 0;
     }
     h3 {
-
-  color: lime; 
-  font-family: "Courier";
-  font-size: 12px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 5s steps(60, end); 
-   -webkit-animation-delay: 5s;
-    -moz-animation-delay: 5s;
-    -o-animation-delay: 5s;
-    animation-delay: 5s;
+      color: lime; 
+      font-family: "Courier";
+      font-size: 12px;
+      margin: 0;
 }
 
-h3:nth-child(2){
-  animation: type2 8s steps(60, end);
-   -webkit-animation-delay: 10s;
-    -moz-animation-delay: 10s;
-    -o-animation-delay: 10s;
-    animation-delay: 10s;
-}
+// h3:nth-child(2){
+//   animation: type2 8s steps(60, end);
+//    -webkit-animation-delay: 10s;
+//     -moz-animation-delay: 10s;
+//     -o-animation-delay: 10s;
+//     animation-delay: 10s;
+// }
     }
   
   .md-foot {
@@ -87,24 +74,39 @@ h3:nth-child(2){
   }
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-} 
+// @keyframes type{ 
+//   from { width: 0; } 
+// } 
 
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
+// @keyframes type2{
+//   0%{width: 0;}
+//   50%{width: 0;}
+//   100%{ width: 100; } 
+// } 
 
-@keyframes blink{
-  to{opacity: .0;}
+// @keyframes blink{
+//   to{opacity: .0;}
+// }
+
+// ::selection{
+//   background: black;
+// }
+
+
+// @-webkit-keyframes typing { from { width: 0; } }
+// @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.console
+{
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  
+  color: lime;
+  font-size: 20px;
 }
 
-::selection{
-  background: black;
+span#caption {
+  color: lime;
 }
-
-
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+#user-caption {
+  display: none;
+}

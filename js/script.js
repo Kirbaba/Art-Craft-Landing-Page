@@ -19,7 +19,7 @@ $(function() {
         $('html,body').animate({
             scrollTop: top
         }, 1000);
-    });
+    });  
 });
 
 jQuery(function ($) {
@@ -36,4 +36,5 @@ jQuery(window).scroll(function() {
         jQuery(".navigation").removeClass("navigation--onScroll");       
     }
 });
+
 
